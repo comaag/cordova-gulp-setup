@@ -5,10 +5,11 @@
 
 ## Installation Guide
 
-#### Start with developing
+#### Start with developing (with browser-sync)
 
     npm install -g gulp
     npm install
+    npm run watch
 
 #### Prepare a cordova build
 
