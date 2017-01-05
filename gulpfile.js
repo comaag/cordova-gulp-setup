@@ -179,6 +179,15 @@ gulp.task('html:dev', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task('cordova:build', function () {
+    return gulp.src([
+        'dist/**/*'
+        ])
+        .on('error', handleError)
+        .pipe(gulp.dest('cordova/www'))
+        .on('error', handleError)
+});
+
 // Other Assets
 gulp.task('assets', function () {
     return gulp.src(buildPath + '/assets/**/*')
@@ -197,6 +206,10 @@ gulp.task('default', ['clean'], function () {
 
 gulp.task('build', ['clean'], function () {
     gulp.start('styles:build', 'scripts:vendor', 'scripts:build', 'images', 'html:build', 'assets');
+});
+
+gulp.task('cordova', ['build'], function () {
+    gulp.start('cordova:build');
 });
 
 // Watch

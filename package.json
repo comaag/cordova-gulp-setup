@@ -1,12 +1,12 @@
 {
-  "name": "WebastoThermoConnect",
-  "version": "1.0.0",
-  "description": "coma AG",
+  "name": "Scope",
+  "version": "0.1.0",
+  "description": "Scope is a chatroom application for users close to you.",
   "main": "index.html",
-  "author": "coma AG",
-  "license": "ISC",
+  "author": "Danny Stey",
   "scripts": {
     "build": "gulp build",
+    "cordova": "gulp cordova && cd cordova && cordova prepare && cordova build && cd ..",
     "watch": "gulp watch"
   },
   "devDependencies": {

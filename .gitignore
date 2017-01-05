@@ -1,3 +1,7 @@
 .idea
 .idea/
-.dist/
+dist/
+dist
+cordova/platforms/android
+cordova/platforms/ios
+cordova/platforms/platforms.json

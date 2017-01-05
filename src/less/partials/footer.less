@@ -1,0 +1,59 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 2.5em;
+
+  input {
+    display: none;
+  }
+
+  .field {
+    height: 3em;
+    width: 3em;
+    background: @primary;
+    position: absolute;
+    right: 2.5em;
+    bottom: 1em;
+    border-radius: 1.5em;
+    box-shadow: 0 1px 2px @shadow;
+    animation: fieldMorph 700ms ease 400ms forwards;
+    transform: translate(50%,0);
+    &.active {
+
+    }
+  }
+}
+
+@keyframes fieldMorph {
+
+  0% {
+    right: 2.5em;
+    bottom: 1em;
+    border-radius: 1.5em;
+    height: 3em;
+    width: 3em;
+    box-shadow: 0 1px 2px @shadow;
+  }
+
+  50% {
+    right: 50%;
+    bottom: 1em;
+    border-radius: 1.5em;
+    height: 3em;
+    width: 3em;
+    box-shadow: 0 1px 2px @shadow;
+  }
+
+  100% {
+    right: 50%;
+    bottom: 0;
+    border-radius: 0;
+    height: 4em;
+    width: 100%;
+    box-shadow: 0 ;
+
+  }
+
+}
