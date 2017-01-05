@@ -1,9 +1,9 @@
 {
-  "name": "Scope",
+  "name": "Application",
   "version": "0.1.0",
-  "description": "Scope is a chatroom application for users close to you.",
+  "description": "A simple rocket start setup for an Apache Cordova application with gulp",
   "main": "index.html",
-  "author": "Danny Stey",
+  "author": "coma AG",
   "scripts": {
     "build": "gulp build",
     "cordova": "gulp cordova && cd cordova && cordova prepare && cordova build && cd ..",

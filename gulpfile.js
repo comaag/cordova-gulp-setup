@@ -1,8 +1,3 @@
-/*!
- * gulp
- * $ npm install gulp gulp-less gulp-sourcemaps gulp-add-src gulp-autoprefixer gulp-cssnano gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-cache gulp-babel del --save-dev
- */
-
 // Load plugins
 var gulp = require('gulp'),
     less = require('gulp-less'),

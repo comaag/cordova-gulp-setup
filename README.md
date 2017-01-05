@@ -1,7 +1,7 @@
-# scope
+# Gulp combined with Apache Cordova
 
-> Scope is a chatroom application for users close to you.
-
+> This is a simple rocket start setup for an application with Apache Cordova combined with Gulp and browser-sync for development.
+Enjoy the force and try it out.
 
 ## Installation Guide
 
@@ -14,6 +14,7 @@
 #### Prepare a cordova build
 
     npm install -g cordova
+    cordova create cordova
     cd cordova && cordova platforms add android --save
     
 ##### check the requirements before building:
