@@ -15,7 +15,7 @@ Enjoy the force and try it out.
 
     npm install -g cordova
     cordova create cordova
-    cd cordova && cordova platforms add android --save
+    cd cordova && cordova platform add android --save
     
 ##### check the requirements before building:
 
